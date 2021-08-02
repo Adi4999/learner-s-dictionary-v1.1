@@ -6,6 +6,7 @@ let defBox = document.querySelector('.def');
 let audioBox = document.querySelector('.audio');
 let loading = document.querySelector('.loading');
 let darkBtn = document.querySelector('.dmode');
+
 let color = 1;
 //1 = in present light mode
 //2=in present dark mode
@@ -127,7 +128,11 @@ darkBtn.addEventListener('click', function (e) {
     document.querySelector('input').style.backgroundColor = '#32373d';
     document.querySelector('input').style.color = 'white';
     document.querySelector('.input_wrap').style.border = '1px solid #808181';
+    document.querySelector('#changeM').textContent = 'Light';
     defBox.style.color = 'white';
+    document.querySelector('.dmode').style.color = '#0163ff';
+    document.querySelector('.dmode').style.backgroundColor = '#fff';
+
     color = 2;
   } else if (color == 2) {
     document.querySelector('html').style.color = 'black';
@@ -135,7 +140,11 @@ darkBtn.addEventListener('click', function (e) {
     document.querySelector('input').style.backgroundColor = '#fff';
     document.querySelector('input').style.color = 'black';
     document.querySelector('.input_wrap').style.border = '1px solid #ddd';
+    document.querySelector('#changeM').textContent = 'Dark';
     defBox.style.color = 'black';
+    document.querySelector('.dmode').style.color = '#c1c3c4';
+    document.querySelector('.dmode').style.backgroundColor = '#292f33';
+
     color = 1;
   }
 });
