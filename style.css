@@ -25,6 +25,9 @@ nav {
 section.input {
   padding-top: 100px;
 }
+h1 {
+  padding-top: 10px;
+}
 h2 {
   text-align: center;
   font-size: 36px;
@@ -98,8 +101,10 @@ section.data p.def {
   background-color: #292f33;
   font-size: 15px;
   border: none;
-  border-radius: 25px;
+  border-radius: 30px;
   padding: 15px 15px;
+  padding-right: 20px;
+  outline: none;
 }
 .dmode:hover {
   background-color: #32373d;
